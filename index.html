@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Students-Alumni Mentorship Platform</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar">
+  <div class="navbar-container">
+    <a href="#home" class="logo">Mentorship Platform</a>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#mentors">Mentors</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#auth-section">Registration</a></li>
+      <li><a href="#about-us">About Us</a></li>
+    </ul>
+    <div class="hamburger-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+</nav>
+
+
+
+
+  <!-- Header Section -->
+  <header class="hero">
+    <div class="hero-overlay">
+      <h1>Students-Alumni Mentorship Platform</h1>
+      <p>Connecting students with experienced alumni for mentorship, guidance, and growth.</p>
+      <a href="#mentors" class="btn">Find Mentors</a>
+
+
+  
+    
+
+    </div>
+  </header>
+
+  <!-- Features Section -->
+  <section class="features">
+    <h2>How It Works</h2>
+    <div class="feature-list">
+      <div class="feature">
+        <img src="images/student.jpeg" alt="Students">
+        <h3>For Students</h3>
+        <p>Get guidance from experienced alumni in your field of interest.</p>
+      </div>
+      <div class="feature">
+        <img src="images/mentor.jpeg" alt="Mentors">
+        <h3>For Alumni</h3>
+        <p>Share your knowledge and mentor the next generation of achievers.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about-us" class="about-section">
+    <h2>About Us</h2>
+    <p>
+      The Students-Alumni Mentorship Platform is dedicated to connecting students with experienced alumni for guidance, learning, and professional growth. Together, we foster a community of collaboration and success.
+    </p>
+  </section>
+
+  <!--ye give me the code to add mentors profile to mentors in above website ka answer h-->
+
+
+
+  <!-- Mentors Section -->
+  <section id="mentors" class="mentors">
+    <h2>Featured Mentors</h2>
+
+      
+      <p>Our alumni mentors are here to guide and inspire students to reach their potential.</p>
+      <div id="mentors-container" class="mentors-container">
+        <!-- Mentors' profiles will be dynamically rendered here -->
+      </div>
+    
+  </section>
+
+  <!--ye where to add this login and registratration from in above website ka answer h-->
+
+
+  <section id="auth-section" class="auth-container">
+    <div class="auth-forms">
+      <!-- Login Form -->
+      <form id="loginForm" class="form active">
+        <h2>Login</h2>
+        <input type="email" id="loginEmail" placeholder="Email" required>
+        <input type="password" id="loginPassword" placeholder="Password" required>
+        <button type="submit">Login</button>
+        <p>Don't have an account? <span class="toggle-form" data-target="registerForm">Register here</span></p>
+      </form>
+  
+      <!-- Registration Form -->
+      <form id="registerForm" class="form">
+        <h2>Register</h2>
+        <input type="text" id="registerName" placeholder="Full Name" required>
+        <input type="email" id="registerEmail" placeholder="Email" required>
+        <input type="password" id="registerPassword" placeholder="Password" required>
+        <select id="registerRole" required>
+          <option value="">Select Role</option>
+          <option value="student">Student</option>
+          <option value="alumni">Alumni</option>
+        </select>
+        <button type="submit">Register</button>
+        <p>Already have an account? <span class="toggle-form" data-target="loginForm">Login here</span></p>
+      </form>
+    </div>
+  </section>
+
+
+
+  <section id="gallery" class="gallery-section">
+    <h2>Previous Year Gallery</h2>
+    <p>Take a look at our memories from past years!</p>
+    <div class="gallery-container">
+      <div class="gallery-item">
+        <img src="images/image1.jpg" alt="Event 1">
+        <div class="gallery-caption">Event 2023</div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/image2.jpg" alt="Event 2">
+        <div class="gallery-caption">Photo Session 2023</div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/image3.jpg" alt="Event 3">
+        <div class="gallery-caption">Photo Session 2022</div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/image4.jpg" alt="Event 4">
+        <div class="gallery-caption">Students Performance 2021</div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/image5.jpg" alt="Event 5">
+        <div class="gallery-caption">Student Performance 2021</div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/image6.jpg" alt="Event 6">
+        <div class="gallery-caption">Our Professors</div>
+      </div>
+    </div>
+  </section>
+  <section id="location" class="map-section">
+    <h2>Our Location</h2>
+    <p>Visit us at our location for more assistance.</p>
+    <div class="map-container">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3597.5149590425035!2d85.14183827445686!3d25.621029114405317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed5856e3c09cc7%3A0xc8a6169d5cd95e88!2sMagadh%20Mahila%20College!5e0!3m2!1sen!2sin!4v1742883096315!5m2!1sen!2sin"
+        width="100%"
+        height="400"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+    </div>
+  </section>
+  <section id="contact" class="contact-section">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Your Name" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Your Email" required>
+      
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+      
+      <button type="submit">Send</button>
+    </form>
+  </section>
+  <footer class="footer">
+    <div class="social-media">
+      <h3>Connect with us</h3>
+      <ul class="social-links">
+        <li>
+          <a href="https://facebook.com" target="_blank">
+            <img src="images/Facebook.jpeg" alt="Facebook Logo"> Facebook
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com" target="_blank">
+            <img src="images/Twitter.jpeg" alt="Twitter Logo"> Twitter
+          </a>
+        </li>
+        <li>
+          <a href="https://instagram.com" target="_blank">
+            <img src="images/Instagram.jpeg" alt="Instagram Logo"> Instagram
+          </a>
+        </li>
+        <li>
+          <a href="https://linkedin.com" target="_blank">
+            <img src="images/LinkedIn.jpeg" alt="LinkedIn Logo"> LinkedIn
+          </a>
+        </li>
+      </ul>
+    </div>
+    <p>&copy; 2025 Your Website Name. All rights reserved.</p>
+
+
+
+
+    
+
+
+  </footer>
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 Students-Alumni Mentorship Platform. All rights reserved.</p>
+  </footer>
+  <script src="app.js"></script>
+
+
+
+
+</body>
+</html>
